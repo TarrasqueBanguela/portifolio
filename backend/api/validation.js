@@ -13,7 +13,7 @@ function notExistsOrError(value, msg) {
     }
     throw msg
 }
-7
+
 function equalOrError(valueA, valueB, msg) {
     if(valueA !== valueB) throw msg
 }

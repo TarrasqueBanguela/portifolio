@@ -33,7 +33,7 @@ module.exports = app => {
             const rowsDeleted = await app.db('windows')
                 .where({ id: req.params.id }).del()
             try {
-                existsOrError(rowsDeleted, 'Artigo não foi encontrado.')
+                existsOrError(rowsDeleted, 'Projeto não foi encontrado.')
             } catch(msg) {
                 return res.status(400).send(msg)    
             }
